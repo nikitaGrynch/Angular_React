@@ -4,8 +4,9 @@
   "description": "webpack",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "prod": "webpack --mode production"
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "prod": "cross-env NODE_ENV=production webpack --mode production",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open"
   },
   "keywords": [
     "webpack",
@@ -16,11 +17,18 @@
   "license": "ISC",
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.3",
+    "csv-loader": "^3.0.5",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.2",
     "webpack": "^5.76.2",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1",
+    "xml-loader": "^1.2.1"
   },
   "dependencies": {
-    "g": "^2.0.1"
+    "cross-env": "^7.0.3",
+    "jquery": "^3.6.4"
   }
 }

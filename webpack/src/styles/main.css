@@ -1,0 +1,15 @@
+body {
+  background-color: burlywood;
+}
+
+.image {
+  width: 300px;
+  height: 250px;
+  margin: 10px auto;
+  border: 2px solid black;
+}
+
+img {
+  width: 300px;
+  height: 250px;
+}

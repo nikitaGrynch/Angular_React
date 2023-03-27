@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  img {
+    height: 100px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .chosen {
+    color: red;
+  }
