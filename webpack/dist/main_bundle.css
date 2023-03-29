@@ -1,0 +1,16 @@
+/*!***************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src_hw_28_03_23/styles/main.scss ***!
+  \***************************************************************************************************************************/
+@font-face {
+  font-family: "Railway";
+  src: url(575ec9e676c7a85494bb.ttf);
+}
+body {
+  font-family: "Railway", sans-serif;
+}
+
+img {
+  height: 70px;
+}
+
+/*# sourceMappingURL=main_bundle.css.map*/
