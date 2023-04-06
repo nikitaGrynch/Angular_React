@@ -1,8 +1,8 @@
 <mat-card class="example-card">
   <mat-card-header>
     <mat-card-title-group>
-      <mat-card-title>{{ fullName }}</mat-card-title>
-      <mat-card-subtitle>{{ email }}</mat-card-subtitle>
+      <mat-card-title [ngStyle]="{'color': nameColor, 'font-size': nameFontSize}">{{ fullName | uppercase }}</mat-card-title>
+      <mat-card-subtitle>{{ email | lowercase }}</mat-card-subtitle>
       <mat-card-subtitle>{{ city }}, {{ country }}</mat-card-subtitle>
       <mat-card-subtitle>{{ phoneNumber }}</mat-card-subtitle>
       <img mat-card-sm-image src="../../../assets/images/avatar.jpg" />
@@ -11,18 +11,18 @@
   <mat-card-content>
     <h1>Skills</h1>
     <ul *ngFor="let skill of skills">
-      <li>{{skill}}</li>
+      <li [ngClass]="skill['isMain'] ? 'main-skill': 'not-main-skill'">{{ skill["name"] }}</li>
     </ul>
     <h1>Work Experience</h1>
     <ul *ngFor="let work of workExperience">
       <ul class="job-desc">
-        <li>title: {{work["title"]}}</li>
-        <li>year: {{work["year"]}}</li>
+        <li>title: {{ work["title"] | titlecase }}</li>
+        <li>year: {{ work["year"] }}</li>
       </ul>
     </ul>
     <h1>Links</h1>
     <ul *ngFor="let link of links">
-      <a [href]="link.url">{{link["title"]}}</a>
+      <a [href]="link.url">{{ link["title"] }}</a>
     </ul>
   </mat-card-content>
 </mat-card>

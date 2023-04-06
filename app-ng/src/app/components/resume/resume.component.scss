@@ -9,11 +9,6 @@ img{
     width: auto;
 }
 
-mat-card-title{
-    color: white;
-    font-size: 2em;
-}
-
 mat-card-subtitle{
     color: gray;
     font-size: 1em;
@@ -30,4 +25,12 @@ h1{
 
 .job-desc{
     list-style-type: none;
+}
+
+.main-skill{
+    color: green;
+}
+
+.not-main-skill{
+    color: red;
 }
