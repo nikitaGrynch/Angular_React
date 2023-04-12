@@ -1,0 +1,9 @@
+<div class="container">
+  <button (click)="carClick()" appButtonHover>Car</button>
+  <button (click)="shipClick()" appButtonHover>Ship</button>
+  <button (click)="airplaneClick()" appButtonHover>Airplane</button>
+  <div *ngIf="show">
+    <h2>{{ selectedItem["title"] | uppercase }}</h2>
+    <img src="{{ selectedItem['url'] }}" alt="the biggest item" />
+  </div>
+</div>

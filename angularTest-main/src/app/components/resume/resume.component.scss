@@ -1,0 +1,36 @@
+mat-card{
+    margin: 0 auto;
+    width: 500px;
+    top: 30px;
+}
+
+img{
+    height: 150px;
+    width: auto;
+}
+
+mat-card-subtitle{
+    color: gray;
+    font-size: 1em;
+}
+
+a{
+    color: gray;
+}
+
+h1{
+    color: white;
+    font-size: 1.5em;
+}
+
+.job-desc{
+    list-style-type: none;
+}
+
+.main-skill{
+    color: green;
+}
+
+.not-main-skill{
+    color: red;
+}

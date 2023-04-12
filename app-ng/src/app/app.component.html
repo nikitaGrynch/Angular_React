@@ -1,29 +1,11 @@
-<mat-toolbar color="primary">
-  <button
-    mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
-  >
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>Car app</span>
-  <span class="example-spacer"></span>
-  <button
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
-  >
-    <mat-icon>favorite</mat-icon>
-  </button>
-
-  <button mat-raised-button color="primary">Add Car</button>
-</mat-toolbar>
-<app-resume></app-resume>
-<!-- <app-car></app-car>
-<ul>
+<app-header></app-header>
+<ul *ngIf="cars.length > 0; else emptyBlock">
   <li *ngFor="let car of cars">
     <app-car [item]="car"></app-car>
   </li>
 </ul>
-<app-input-car (outCar)="addCar($event)"></app-input-car> -->
-<!-- <app-image></app-image> -->
+<ng-template #emptyBlock><h3 appZoom>List is empty</h3></ng-template>
+
+<!-- <app-input-car (outCar)="addCar($event)"></app-input-car> -->
+<app-hooks [timer]="timer"></app-hooks>
+<router-outlet></router-outlet>

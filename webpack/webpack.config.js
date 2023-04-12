@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const isModeDev = process.env.NODE_ENV === "development";
@@ -9,9 +10,9 @@ const filename = (ext) =>
   `[name]_${isModeDev ? "" : "[contenthash]_"}bundle.${ext}`;
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, "src_hw_28_03_23", "index.js"),
-    // main: path.resolve(__dirname, "src", "index.js"),
-    // statistics: path.resolve(__dirname, "src", "statistics.js"),
+    main: path.resolve(__dirname, "src", "index.js"),
+    statistics: path.resolve(__dirname, "src", "statistics.js"),
+    request: path.resolve(__dirname, "src", "request.js"),
   },
   output: {
     filename: filename("js"),
@@ -25,19 +26,18 @@ module.exports = {
     splitChunks: {
       chunks: "all",
     },
+    minimizer: [new CssMinimizerPlugin()],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src_hw_28_03_23", "index.html"),
-      // template: path.resolve(__dirname, "src", "index.html"),
+      template: path.resolve(__dirname, "src", "index.html"),
+      minify: { collapseWhitespace: !isModeDev },
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
         {
-          // from: path.resolve(__dirname, "src", "favicon.ico"),
-          // to: path.resolve(__dirname, "dist"),
-          from: path.resolve(__dirname, "src_hw_28_03_23", "favicon.ico"),
+          from: path.resolve(__dirname, "src", "favicon.ico"),
           to: path.resolve(__dirname, "dist"),
         },
       ],
@@ -75,6 +75,18 @@ module.exports = {
       {
         test: /\.ttf$/,
         type: "asset/resource",
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            // presets: [['@babel/preset-env', { targets: "defaults" }]],
+            presets: [["@babel/preset-env", { targets: { ie: 11 } }]],
+            // plugins: ['@babel/plugin-proposal-class-properties']
+          },
+        },
       },
     ],
   },

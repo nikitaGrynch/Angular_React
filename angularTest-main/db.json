@@ -1,0 +1,57 @@
+{
+  "cars": [
+    {
+      "model": "bmw",
+      "price": "120000",
+      "year": 2022,
+      "id": 1
+    }
+  ],
+  "resume": {
+    "fullName": "Grynchenko Nikita",
+    "nameColor": "white",
+    "nameFontSize": "2em",
+    "email": "nikita.grynch@gmail.com",
+    "phoneNumber": "+3801231122",
+    "city": "Odessa",
+    "country": "Ukraine",
+    "skills": [
+      {
+        "name": ".NET",
+        "isMain": true
+      },
+      {
+        "name": "JS",
+        "isMain": true
+      },
+      {
+        "name": "Python",
+        "isMain": false
+      },
+      {
+        "name": "SQL",
+        "isMain": false
+      }
+    ],
+    "workExperience": [
+      {
+        "title": "Firefly web project",
+        "year": 2022
+      },
+      {
+        "title": "Scholarships IOS app",
+        "year": 2023
+      }
+    ],
+    "links": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/nikitaGrynch"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://linkedin.com/in/nikita-grynchenko-0491ab232"
+      }
+    ]
+  }
+}
