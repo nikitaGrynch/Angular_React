@@ -1,0 +1,22 @@
+.pictures-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.picture-details{
+    margin: 30px;
+}
+
+.mini-picture{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+img{
+    height: 200px;
+    margin: 10px;
+}

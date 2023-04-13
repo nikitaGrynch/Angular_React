@@ -22,6 +22,9 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { TestFormComponent } from './components/test-form/test-form.component';
 import { TheBiggestItemComponent } from './components/the-biggest-item/the-biggest-item.component';
 import { ButtonHoverDirective } from './directives/button-hover.directive';
+import { PictureComponent } from './components/picture/picture.component';
+import { PicturesListComponent } from './components/pictures-list/pictures-list.component';
+import {MatListModule} from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,6 +40,8 @@ import { ButtonHoverDirective } from './directives/button-hover.directive';
     TestFormComponent,
     TheBiggestItemComponent,
     ButtonHoverDirective,
+    PictureComponent,
+    PicturesListComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +54,7 @@ import { ButtonHoverDirective } from './directives/button-hover.directive';
     HttpClientModule,
     MatCardModule,
     MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent],

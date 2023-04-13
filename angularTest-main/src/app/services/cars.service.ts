@@ -7,13 +7,13 @@ import { ICar } from '../models/ICar';
   providedIn: 'root',
 })
 export class CarsService {
-  private path: string = "http://localhost:3000/cars"
+  private path: string = 'http://localhost:3000/cars';
   constructor(private _http: HttpClient) {}
 
   getAllCars(): Observable<any> {
     return this._http.get(this.path);
   }
-  addCar(data: ICar): Observable<any>{
+  addCar(data: ICar): Observable<any> {
     return this._http.post(this.path, data);
   }
 }

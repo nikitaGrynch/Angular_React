@@ -1,0 +1,16 @@
+<div class="picture-details" *ngIf="showDetails; else elseBlock">
+  <app-picture [picture]="selectedPicture"></app-picture>
+</div>
+
+<ng-template #elseBlock>
+  <div class="pictures-list">
+    <div
+      *ngFor="let picture of pictures"
+      class="mini-picture"
+      (click)="selectPicture(picture)"
+    >
+      <img src="{{ picture.imgUrl }}" alt="picture" />
+      <span>{{ picture.title }}</span>
+    </div>
+  </div>
+</ng-template>

@@ -1,0 +1,24 @@
+<div class="main-container">
+  <div class="picture-container">
+    <h1>{{ picture.title }}</h1>
+    <img src="{{ picture.imgUrl }}" alt="picture" />
+    <mat-list>
+      <mat-list-item>Author: {{ picture.author }}</mat-list-item>
+      <mat-list-item>Year: {{ picture.year }}</mat-list-item>
+      <mat-list-item>Location: {{ picture.place }}</mat-list-item>
+      <mat-list-item>Size: {{ picture.size }}</mat-list-item>
+    </mat-list>
+  </div>
+  <div>
+    <h2>Similar Pictures</h2>
+    <div class="similar-pictures-container">
+      <div *ngFor="let picture of similarPictures">
+        <img src="{{ picture.imgUrl }}" alt="picture" (click)="selectPicture(picture)"/>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="picture">
+  <img src="{{ picture.imgUrl }}" alt="picture" />
+  <span>{{ picture.title }}</span>
+</div> -->

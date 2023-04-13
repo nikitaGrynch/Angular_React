@@ -53,5 +53,127 @@
         "url": "https://linkedin.com/in/nikita-grynchenko-0491ab232"
       }
     ]
-  }
+  },
+  "pictures":[
+    {
+      "title": "Mona Lisa",
+      "author": "Leonardo Da Vinci",
+      "year": "1503–19",
+      "place": "Louvre Museum, Paris",
+      "size": "77 cm x 53 cm",
+      "imgUrl": "https://media.timeout.com/images/103166731/1536/1152/image.jpg"
+    },
+    {
+      "title": "Girl with a Pearl Earring",
+      "author": "Johannes Vermeer",
+      "year": "1665",
+      "place": "Rijksmuseum, Amsterdam",
+      "size": "44 cm x 39 cm",
+      "imgUrl": "https://media.timeout.com/images/103166735/1536/1152/image.jpg"
+    },
+    {
+      "title": "The Starry Night",
+      "author": "Vincent van Gogh",
+      "year": "1889",
+      "place": "The Museum of Modern Art, New York",
+      "size": "74 cm x 92 cm",
+      "imgUrl": "https://media.timeout.com/images/103166739/1536/1152/image.jpg"
+    },
+    {
+      "title": "The Kiss",
+      "author": "Gustav Klimt",
+      "year": "1907–1908",
+      "place": "Österreichische Galerie Belvedere, Vienna",
+      "size": "180 cm x 180 cm",
+      "imgUrl": "https://media.timeout.com/images/103166743/1536/1152/image.jpg"
+    },
+    {
+      "title": "The Birth of Venus",
+      "author": "Sandro Botticelli",
+      "year": "1484–1486",
+      "place": "Uffizi Gallery, Florence",
+      "size": "172 cm x 278 cm",
+      "imgUrl": "https://media.timeout.com/images/103166743/1536/1152/image.jpg"
+    },
+    {
+      "title": "Last Supper",
+      "author": "Leonardo Da Vinci",
+      "year": "1495–98",
+      "place": "Santa Maria delle Grazie, Milan",
+      "size": "460 cm x 880 cm",
+      "imgUrl": "https://cdn.britannica.com/04/95904-050-7EB39FC8/Last-Supper-wall-painting-restoration-Leonardo-da-1999.jpg"
+    },
+    {
+      "title": "Vitruvian Man",
+      "author": "Leonardo Da Vinci",
+      "year": "1490",
+      "place": "Gallerie dell'Accademia, Venice",
+      "size": "35 cm x 26 cm",
+      "imgUrl": "https://cdn.britannica.com/68/145968-050-01768DAD/Vitruvian-Man-Leonardo-da-Vinci-Gallerie-dellAccademia.jpg"
+    },
+    {
+      "title": "Christ in the House of Martha and Mary",
+      "author": "Johannes Vermeer",
+      "year": "1654–55",
+      "place": "National Gallery of Scotland, Edinburgh",
+      "size": "160 cm x 142 cm",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Johannes_%28Jan%29_Vermeer_-_Christ_in_the_House_of_Martha_and_Mary_-_Google_Art_Project.jpg/400px-Johannes_%28Jan%29_Vermeer_-_Christ_in_the_House_of_Martha_and_Mary_-_Google_Art_Project.jpg"
+    },
+    {
+      "title": "Saint Praxedis",
+      "author": "Johannes Vermeer",
+      "year": "1655",
+      "place": "Private Collection, Tokyo On loan to the National Museum of Western Art, Tokyo",
+      "size": "102 cm x 83 cm",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/SaintPraxedisJohannesVermeerPainting.jpg/400px-SaintPraxedisJohannesVermeerPainting.jpg"
+    },
+    {
+      "title": "Still Life with Cabbage and Clogs",
+      "author": "Vincent van Gogh",
+      "year": "1881",
+      "place": "Van Gogh Museum, Amsterdam",
+      "size": "34 cm x 55 cm",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Stilleven_met_kool_en_klompen_-_s0137V1962_-_Van_Gogh_Museum.jpg/400px-Stilleven_met_kool_en_klompen_-_s0137V1962_-_Van_Gogh_Museum.jpg"
+    },
+    {
+      "title": "Beach at Scheveningen in Calm Weather",
+      "author": "Vincent van Gogh",
+      "year": "1882",
+      "place": "Minnesota Marine Art Museum, Winona",
+      "size": "35 cm x 49 cm",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Beach_at_Scheveningen_in_Calm_Weather_-_My_Dream.jpg/400px-Beach_at_Scheveningen_in_Calm_Weather_-_My_Dream.jpg"
+    },
+    {
+      "title": "Burgtheater in Vienna",
+      "author": "Gustav Klimt",
+      "year": "1907–1908",
+      "place": "Burgtheater, Vienna",
+      "size": "82 cm x 93 cm",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Gustav_Klimt_072.JPG/300px-Gustav_Klimt_072.JPG"
+    },
+    {
+      "title": "Portrait of pianist Joseph Pembauer",
+      "author": "Gustav Klimt",
+      "year": "1890",
+      "place": "Innsbruck, Austria",
+      "size": "65 cm x 55 cm",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Klimt_-_Bildnis_Joseph_Pembauer.jpeg/300px-Klimt_-_Bildnis_Joseph_Pembauer.jpeg"
+    },
+    {
+      "title": "Madonna with Lilies and Eight Angels",
+      "author": "Sandro Botticelli",
+      "year": "1470",
+      "place": "Uffizi Gallery, Florence",
+      "size": "167 cm x 87 cm",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sandro_Botticelli_-_Mary_with_the_Child_and_Singing_Angels_-_Google_Art_Project.jpg/400px-Sandro_Botticelli_-_Mary_with_the_Child_and_Singing_Angels_-_Google_Art_Project.jpg"
+    },
+    {
+      "title": "St. Sebastian",
+      "author": "Sandro Botticelli",
+      "year": "1474",
+      "place": "Gemäldegalerie, Berlin",
+      "size": "195 cm x 75 cm",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sandro_Botticelli_054.jpg/152px-Sandro_Botticelli_054.jpg"
+    }
+  ]
 }
