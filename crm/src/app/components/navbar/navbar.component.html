@@ -8,11 +8,15 @@
       <mat-icon>menu</mat-icon></button>
       <span>My App</span><span class="example-spacer"></span>
 
-      <div class="example-button-row">
+      <div class="example-button-row" style="display: flex; align-items: center;">
         <button mat-raised-button routerLink="home">Home</button>
         <button mat-raised-button routerLink="list-cars">List cars</button>
         <button mat-raised-button (click)="addCar()">Add car</button>
         <button mat-raised-button routerLink="about">About</button>
+        <span *ngIf="isWeather" style="display: flex; align-items: center;">
+          <span>{{currentTemperature}} C&#176;</span>
+          <img src="{{weatherIcon}}" alt="icon">
+        </span>
       </div>
   </mat-toolbar>
 </p>
