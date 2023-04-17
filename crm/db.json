@@ -1,0 +1,55 @@
+{
+  "cars": [
+    {
+      "model": "mazda",
+      "number": "BH1212EB",
+      "color": "yellow",
+      "type": "type 3",
+      "id": 1
+    },
+    {
+      "model": "mazda",
+      "number": "BH1212EB",
+      "color": "yellow",
+      "type": "type 3",
+      "id": 2
+    },
+    {
+      "model": "dsfd",
+      "number": "sdds",
+      "color": "sdc",
+      "type": "sec",
+      "id": 3
+    },
+    {
+      "model": "opel",
+      "year": "",
+      "number": "1234",
+      "color": "",
+      "type": "type 2",
+      "isNew": "true",
+      "vEngine": 0,
+      "id": 4
+    },
+    {
+      "model": "",
+      "year": "",
+      "number": "",
+      "color": "Blue",
+      "type": "",
+      "isNew": "true",
+      "vEngine": 0,
+      "id": 5
+    },
+    {
+      "model": "",
+      "year": "",
+      "number": "",
+      "color": "",
+      "type": "",
+      "isNew": "false",
+      "vEngine": 0,
+      "id": 6
+    }
+  ]
+}

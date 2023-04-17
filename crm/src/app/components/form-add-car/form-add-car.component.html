@@ -1,0 +1,76 @@
+<form [formGroup]="carForm" (ngSubmit)="addCar()">
+  <div mat-dialog-title>Add Car</div>
+
+  <div mat-dialog-content>
+    <div class="row">
+      <mat-form-field>
+        <mat-label>Model</mat-label>
+
+        <input
+          type="text"
+          matInput
+          placeholder="mazda"
+          formControlName="model"
+        />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Number</mat-label>
+        <input
+          type="text"
+          matInput
+          placeholder="BH3456"
+          formControlName="number"
+        />
+      </mat-form-field>
+
+      <br />
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="fill">
+        <mat-label>Color</mat-label>
+        <mat-select formControlName="color">
+          <mat-option
+            *ngFor="let color of availableColors"
+            value="{{ color }}"
+            >{{ color }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Type</mat-label>
+        <mat-select formControlName="type">
+          <mat-option *ngFor="let type of availableTypes" value="{{ type }}">{{
+            type
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-label>Is New?</mat-label>
+      <mat-radio-group formControlName="isNew">
+        <mat-radio-button value="true">Yes</mat-radio-button>
+        <mat-radio-button value="false">No</mat-radio-button>
+      </mat-radio-group>
+      <mat-form-field>
+        <mat-label>Year</mat-label>
+        <input
+          type="number"
+          matInput
+          placeholder="2020"
+          formControlName="year"
+          min="1970"
+          max="2023"
+        />
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button color="primary" type="submit">Save</button>
+
+    <button mat-raised-button color="warn" type="button">Cancel</button>
+  </div>
+</form>
