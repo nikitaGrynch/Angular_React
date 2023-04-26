@@ -1,0 +1,9 @@
+<div *ngIf="movie">
+  <h2>{{ movie.Title }} ({{ movie.Year }})</h2>
+  <img [src]="movie.Poster" alt="Movie poster" />
+  <p>Director: {{ movie.Director }}</p>
+  <p>Actors: {{ movie.Actors }}</p>
+  <p>Description: {{ movie.Plot }}</p>
+  <p>Duration: {{ movie.Runtime }}</p>
+  <p>Rating: {{ movie.imdbRating }}</p>
+</div>

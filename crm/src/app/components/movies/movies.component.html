@@ -1,0 +1,5 @@
+<h1>Search Movie</h1>
+<div>
+  <app-movie-search (movie)="onMovieFound($event)"></app-movie-search>
+  <app-movie-details [movie]="movie"></app-movie-details>
+</div>

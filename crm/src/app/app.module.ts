@@ -20,6 +20,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { FormSignInComponent } from './components/form-sign-in/form-sign-in.component';
+import { MovieSearchComponent } from './components/movie-search/movie-search.component';
+import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
+import { MoviesComponent } from './components/movies/movies.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +37,10 @@ import {MatRadioModule} from '@angular/material/radio';
     ListCarsComponent,
     NotFoundComponent,
     FormAddCarComponent,
+    FormSignInComponent,
+    MovieSearchComponent,
+    MovieDetailsComponent,
+    MoviesComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +55,10 @@ import {MatRadioModule} from '@angular/material/radio';
     FormsModule,
     ReactiveFormsModule,
     MatSelectModule,
-    MatRadioModule
+    MatRadioModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

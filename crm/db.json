@@ -1,55 +1,32 @@
 {
   "cars": [
     {
-      "model": "mazda",
-      "number": "BH1212EB",
-      "color": "yellow",
-      "type": "type 3",
+      "model": "opel",
+      "year": 2020,
+      "number": "BH2222",
+      "color": "Blue",
+      "type": "Coupe",
+      "isNew": "false",
+      "vEngine": "1300",
       "id": 1
     },
     {
-      "model": "mazda",
-      "number": "BH1212EB",
-      "color": "yellow",
-      "type": "type 3",
+      "model": "bmw",
+      "year": 2022,
+      "number": "BH3333",
+      "color": "Gray",
+      "type": "Hatchback",
+      "isNew": "true",
+      "vEngine": "2200",
       "id": 2
-    },
+    }
+  ],
+  "users": [
     {
-      "model": "dsfd",
-      "number": "sdds",
-      "color": "sdc",
-      "type": "sec",
-      "id": 3
-    },
-    {
-      "model": "opel",
-      "year": "",
-      "number": "1234",
-      "color": "",
-      "type": "type 2",
-      "isNew": "true",
-      "vEngine": 0,
-      "id": 4
-    },
-    {
-      "model": "",
-      "year": "",
-      "number": "",
-      "color": "Blue",
-      "type": "",
-      "isNew": "true",
-      "vEngine": 0,
-      "id": 5
-    },
-    {
-      "model": "",
-      "year": "",
-      "number": "",
-      "color": "",
-      "type": "",
-      "isNew": "false",
-      "vEngine": 0,
-      "id": 6
+      "id": 1,
+      "login": "admin",
+      "pwd": "admin123",
+      "email": "admin@egmail.com"
     }
   ]
 }

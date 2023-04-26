@@ -1,0 +1,14 @@
+<label>Movie Title:</label>
+<input type="text" [(ngModel)]="title" name="title" />
+<label>Movie Year:</label>
+<input type="text" [(ngModel)]="year" name="year" />
+<div>
+  <input
+    type="checkbox"
+    [(ngModel)]="isFullPlot"
+    id="isFullPlot"
+    name="isFullPlot"
+  />
+  <label for="isFullPlot">show full description</label>
+</div>
+<button (click)="search()">Search</button>

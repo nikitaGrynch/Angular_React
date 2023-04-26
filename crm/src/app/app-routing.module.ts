@@ -4,12 +4,15 @@ import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListCarsComponent } from './components/list-cars/list-cars.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { AuthGuard } from './guards/auth.guard';
+import { MoviesComponent } from './components/movies/movies.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'list-cars', component: ListCarsComponent },
+  { path: 'movies', component: MoviesComponent },
+  { path: 'list-cars', component: ListCarsComponent, canActivate: [AuthGuard] },
   { path: '**', component: NotFoundComponent },
 ];
 

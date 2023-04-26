@@ -1,19 +1,29 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CarsService {
+  subject: Subject<any> = new Subject<any>();
+
   constructor(private _httpClient: HttpClient) {}
 
   getAllCars(): Observable<any> {
     return this._httpClient.get(environment.pathToServer);
   }
 
-   createNewCar(data: any): Observable<any> {
+  createNewCar(data: any): Observable<any> {
     return this._httpClient.post(environment.pathToServer, data);
+  }
+
+  deleteCarById(id: number): Observable<any> {
+    return this._httpClient.delete(environment.pathToServer + id);
+  }
+
+  updateCarById(id: number, data: any): Observable<any>{
+    return this._httpClient.put(environment.pathToServer + id, data);
   }
 }
