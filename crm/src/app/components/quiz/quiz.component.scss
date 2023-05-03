@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+}
+
+.menu, .question, .stats{
+  color: white;
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  width: 400px;
+}
+
+.menu-container,
+.question-container,
+.stats-container {
+  display: flex;
+  justify-content: center;
+}
+
+mat-radio-group {
+  margin: 15px;
+}
+
+.divider{
+    height: 2px;
+    background-color: gray;
+}

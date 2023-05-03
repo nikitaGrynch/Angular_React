@@ -1,0 +1,49 @@
+<h1>QUIZ</h1>
+<div *ngIf="!isStarted" class="menu-container">
+  <div class="menu">
+    <h3>Select a game mode</h3>
+    <mat-radio-group [(ngModel)]="gameMode">
+      <mat-radio-button value="normal">Normal</mat-radio-button>
+      <mat-radio-button value="timer">With Timer</mat-radio-button>
+    </mat-radio-group>
+    <button mat-stroked-button (click)="startGame()">START</button>
+  </div>
+</div>
+
+<div *ngIf="isStarted && !isFinished && !isTimeOver" class="question-container">
+  <div class="question">
+    <h2>
+      {{ timeStr }}{{gameMode == "timer" ? " / " + maxAvailableTimeStr :""}}
+    </h2>
+    <h2>{{ questions[currentQuestion].question }}</h2>
+    <h4>{{ currentQuestion + 1 }}/{{ questions.length }}</h4>
+    <div class="divider"></div>
+    <button
+      #answer
+      (click)="selectAnswer(answer)"
+      mat-button
+      *ngFor="let answer of questions[currentQuestion].answers"
+    >
+      {{ answer }}
+    </button>
+  </div>
+</div>
+
+<div *ngIf="isFinished" class="stats-container">
+  <div class="stats">
+    <h2>Statistics</h2>
+    <p>Score: {{ score }}/{{ questions.length }}</p>
+    <p>All time: {{ timeStr }}</p>
+    <p>Minimum Question Time: {{ minQuestionTimeStr }}</p>
+    <p>Maximum Question Time: {{ maxQuestionTimeStr }}</p>
+    <p>Average Question Time: {{ averageQuestionTimeStr }}</p>
+    <button mat-stroked-button (click)="restartButtonClick()">Restart</button>
+  </div>
+</div>
+
+<div *ngIf="isTimeOver" class="stats-container">
+  <div class="stats">
+    <h2>Time Over!</h2>
+    <button mat-stroked-button (click)="restartButtonClick()">Restart</button>
+  </div>
+</div>

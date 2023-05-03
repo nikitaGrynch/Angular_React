@@ -6,6 +6,7 @@ import { ListCarsComponent } from './components/list-cars/list-cars.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AuthGuard } from './guards/auth.guard';
 import { MoviesComponent } from './components/movies/movies.component';
+import { QuizComponent } from './components/quiz/quiz.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'movies', component: MoviesComponent },
   { path: 'list-cars', component: ListCarsComponent, canActivate: [AuthGuard] },
+  { path: 'quiz', component: QuizComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

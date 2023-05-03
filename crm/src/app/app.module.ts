@@ -27,6 +27,8 @@ import { FormSignInComponent } from './components/form-sign-in/form-sign-in.comp
 import { MovieSearchComponent } from './components/movie-search/movie-search.component';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { MoviesComponent } from './components/movies/movies.component';
+import { QuizComponent } from './components/quiz/quiz.component';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import { MoviesComponent } from './components/movies/movies.component';
     MovieSearchComponent,
     MovieDetailsComponent,
     MoviesComponent,
+    QuizComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,6 +62,7 @@ import { MoviesComponent } from './components/movies/movies.component';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent],

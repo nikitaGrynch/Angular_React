@@ -28,5 +28,72 @@
       "pwd": "admin123",
       "email": "admin@egmail.com"
     }
+  ],
+  "questions": [
+    {
+      "question": "What color is the sky on a clear day?",
+      "answers": ["Blue", "Green", "Red", "Yellow"],
+      "correctAnswer": "Blue"
+    },
+    {
+      "question": "What animal is known for being slow-moving and carrying a shell on its back?",
+      "answers": ["Lion", "Giraffe", "Turtle", "Monkey"],
+      "correctAnswer": "Turtle"
+    },
+    {
+      "question": "What is the name of the first man to walk on the moon?",
+      "answers": [
+        "Neil Armstrong",
+        "Buzz Aldrin",
+        "Alan Shepard",
+        "John Glenn"
+      ],
+      "correctAnswer": "Neil Armstrong"
+    },
+    {
+      "question": "What is the name of the fictional detective who lives at 221B Baker Street?",
+      "answers": [
+        "Sherlock Holmes",
+        "Hercule Poirot",
+        "Miss Marple",
+        "Nancy Drew"
+      ],
+      "correctAnswer": "Sherlock Holmes"
+    },
+    {
+      "question": "What is the largest mammal in the world?",
+      "answers": ["Elephant", "Blue whale", "Giraffe", "Hippopotamus"],
+      "correctAnswer": "Blue whale"
+    },
+    {
+      "question": "What is the currency used in Japan?",
+      "answers": ["Dollar", "Pound", "Yen", "Euro"],
+      "correctAnswer": "Yen"
+    },
+    {
+      "question": "What is the name of the planet we live on?",
+      "answers": ["Mars", "Venus", "Earth", "Saturn"],
+      "correctAnswer": "Earth"
+    },
+    {
+      "question": "What is the largest ocean in the world?",
+      "answers": [
+        "Indian Ocean",
+        "Atlantic Ocean",
+        "Pacific Ocean",
+        "Arctic Ocean"
+      ],
+      "correctAnswer": "Pacific Ocean"
+    },
+    {
+      "question": "What is the capital city of France?",
+      "answers": ["Madrid", "Rome", "Paris", "Berlin"],
+      "correctAnswer": "Paris"
+    },
+    {
+      "question": "What is the name of the fairy tale character who wears glass slippers?",
+      "answers": ["Snow White", "Cinderella", "Rapunzel", "Belle"],
+      "correctAnswer": "Cinderella"
+    }
   ]
 }
