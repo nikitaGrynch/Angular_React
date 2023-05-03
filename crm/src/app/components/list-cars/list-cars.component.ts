@@ -27,6 +27,7 @@ export class ListCarsComponent implements OnInit {
   ];
   dataSource!: MatTableDataSource<ICar>;
   carsList!: ICar[];
+  checkedCarsIdsList: number[] = [];
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
 
@@ -52,6 +53,16 @@ export class ListCarsComponent implements OnInit {
     });
   }
 
+  checkbox_Click(e: any, id: number) {
+    if (e.target.checked) {
+      this.checkedCarsIdsList.push(id);
+    }
+    else if(!e.target.checked){
+      let index = this.checkedCarsIdsList.indexOf(id);
+      this.checkedCarsIdsList = this.checkedCarsIdsList.splice(index, index);
+    }
+  }
+
   deleteCar(id: number): void {
     this._carsService.deleteCarById(id).subscribe({
       next: () => {
@@ -60,6 +71,12 @@ export class ListCarsComponent implements OnInit {
       },
       error: (error) => console.log(error),
     });
+  }
+
+  deleteCars(): void{
+    for(let carId of this.checkedCarsIdsList){
+      this.deleteCar(carId);
+    }
   }
 
   updateCar(data: any): void {

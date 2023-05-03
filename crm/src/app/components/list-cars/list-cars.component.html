@@ -3,6 +3,10 @@
   <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input />
 </mat-form-field>
 
+<button *ngIf="checkedCarsIdsList.length > 0" mat-icon-button (click)="deleteCars()">
+  <mat-icon>delete</mat-icon>
+</button>
+
 <div class="mat-elevation-z8">
   <table mat-table [dataSource]="dataSource" matSort>
     <!-- ID Column -->
@@ -62,6 +66,7 @@
         <button mat-icon-button (click)="updateCar(row)">
           <mat-icon>edit</mat-icon>
         </button>
+        <input name="select" type="checkbox" value="Value 1" (change)="checkbox_Click($event, row.id)" />
       </td>
     </ng-container>
 

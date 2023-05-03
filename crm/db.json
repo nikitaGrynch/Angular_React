@@ -1,24 +1,44 @@
 {
   "cars": [
     {
-      "model": "opel",
-      "year": 2020,
-      "number": "BH2222",
+      "model": "mazda",
+      "year": 2021,
+      "number": "BH2021",
       "color": "Blue",
-      "type": "Coupe",
-      "isNew": "false",
-      "vEngine": "1300",
+      "type": "Sports Car",
+      "isNew": "true",
+      "vEngine": "2000",
       "id": 1
     },
     {
       "model": "bmw",
-      "year": 2022,
-      "number": "BH3333",
-      "color": "Gray",
-      "type": "Hatchback",
+      "year": 2023,
+      "number": "BH1111",
+      "color": "Black",
+      "type": "Sports Car",
       "isNew": "true",
-      "vEngine": "2200",
+      "vEngine": "3000",
       "id": 2
+    },
+    {
+      "model": "ferrari",
+      "year": 2022,
+      "number": "BH2011",
+      "color": "Black",
+      "type": "Sports Car",
+      "isNew": "true",
+      "vEngine": "4000",
+      "id": 5
+    },
+    {
+      "model": "kia",
+      "year": 2020,
+      "number": "BH1112",
+      "color": "Yellow",
+      "type": "Crossover",
+      "isNew": "true",
+      "vEngine": "2000",
+      "id": 6
     }
   ],
   "users": [
@@ -32,12 +52,22 @@
   "questions": [
     {
       "question": "What color is the sky on a clear day?",
-      "answers": ["Blue", "Green", "Red", "Yellow"],
+      "answers": [
+        "Blue",
+        "Green",
+        "Red",
+        "Yellow"
+      ],
       "correctAnswer": "Blue"
     },
     {
       "question": "What animal is known for being slow-moving and carrying a shell on its back?",
-      "answers": ["Lion", "Giraffe", "Turtle", "Monkey"],
+      "answers": [
+        "Lion",
+        "Giraffe",
+        "Turtle",
+        "Monkey"
+      ],
       "correctAnswer": "Turtle"
     },
     {
@@ -62,17 +92,32 @@
     },
     {
       "question": "What is the largest mammal in the world?",
-      "answers": ["Elephant", "Blue whale", "Giraffe", "Hippopotamus"],
+      "answers": [
+        "Elephant",
+        "Blue whale",
+        "Giraffe",
+        "Hippopotamus"
+      ],
       "correctAnswer": "Blue whale"
     },
     {
       "question": "What is the currency used in Japan?",
-      "answers": ["Dollar", "Pound", "Yen", "Euro"],
+      "answers": [
+        "Dollar",
+        "Pound",
+        "Yen",
+        "Euro"
+      ],
       "correctAnswer": "Yen"
     },
     {
       "question": "What is the name of the planet we live on?",
-      "answers": ["Mars", "Venus", "Earth", "Saturn"],
+      "answers": [
+        "Mars",
+        "Venus",
+        "Earth",
+        "Saturn"
+      ],
       "correctAnswer": "Earth"
     },
     {
@@ -87,12 +132,22 @@
     },
     {
       "question": "What is the capital city of France?",
-      "answers": ["Madrid", "Rome", "Paris", "Berlin"],
+      "answers": [
+        "Madrid",
+        "Rome",
+        "Paris",
+        "Berlin"
+      ],
       "correctAnswer": "Paris"
     },
     {
       "question": "What is the name of the fairy tale character who wears glass slippers?",
-      "answers": ["Snow White", "Cinderella", "Rapunzel", "Belle"],
+      "answers": [
+        "Snow White",
+        "Cinderella",
+        "Rapunzel",
+        "Belle"
+      ],
       "correctAnswer": "Cinderella"
     }
   ]
