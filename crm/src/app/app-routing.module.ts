@@ -13,8 +13,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'movies', component: MoviesComponent },
-  // { path: 'list-cars', component: ListCarsComponent, canActivate: [AuthGuard] },
-  { path: 'list-cars', component: ListCarsComponent},
+  { path: 'list-cars', component: ListCarsComponent, canActivate: [AuthGuard] },
+  // { path: 'list-cars', component: ListCarsComponent},
   { path: 'quiz', component: QuizComponent },
   { path: '**', component: NotFoundComponent },
 ];

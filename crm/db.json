@@ -44,8 +44,8 @@
   "users": [
     {
       "id": 1,
-      "login": "admin",
-      "pwd": "admin123",
+      "username": "admin",
+      "password": "admin123",
       "email": "admin@egmail.com"
     }
   ],

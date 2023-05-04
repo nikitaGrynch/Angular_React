@@ -23,12 +23,13 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-import { FormSignInComponent } from './components/form-sign-in/form-sign-in.component';
 import { MovieSearchComponent } from './components/movie-search/movie-search.component';
 import { MovieDetailsComponent } from './components/movie-details/movie-details.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { QuizComponent } from './components/quiz/quiz.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { LoginModalComponent } from './components/login-modal/login-modal.component';
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -39,11 +40,11 @@ import {MatDividerModule} from '@angular/material/divider';
     ListCarsComponent,
     NotFoundComponent,
     FormAddCarComponent,
-    FormSignInComponent,
     MovieSearchComponent,
     MovieDetailsComponent,
     MoviesComponent,
     QuizComponent,
+    LoginModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,7 +65,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatSortModule,
     MatDividerModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
